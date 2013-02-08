@@ -1,6 +1,6 @@
 # BRWSR.INFO
 
-BRWSR.INFO is a simple tool that uses [Modernizr](http://modernizr.com/) and [SWFObject](https://code.google.com/p/swfobject/) to output some useful information about a browser's capabilities. This enables non-technical to easy see, copy or email technical information that can aid a developer in troubleshooting cross-browser web development. It is also easy to pull up the page on a mobile device and email the results.
+BRWSR.INFO is a simple tool that uses [Modernizr](http://modernizr.com/) and [SWFObject](https://code.google.com/p/swfobject/) to output some useful information about a browser's capabilities. This enables non-technical people to easy see, copy or email technical information that can aid a developer in troubleshooting cross-browser web development. It is also easy to pull up the page on a mobile device and email the results.
 
 [http://brwsr.info/](http://brwsr.info/)
 
