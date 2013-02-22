@@ -1,4 +1,4 @@
-LICENSE
+MIT License (MIT)
 
 Copyright (C) 2013 Lucas J. Shuman
 
