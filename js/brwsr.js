@@ -4,7 +4,8 @@
 
 	"use strict";
 
-	var data,
+	var EMAIL_TITLE = 'BRWSR.INFO',
+		data,
 		$btnRun,
 		$btnEmail,
 		$results,
@@ -21,15 +22,26 @@
 
 			$btnRun.click(function(e) {
 				e.preventDefault();
-				run();
+				refresh();
+				show();
+			});
+
+			$btnEmail.click(function(e) {
+
+				refresh();
+				$btnEmail.attr('href', 'mailto:?subject=' + escape(EMAIL_TITLE) + '&body=' + escape(data.join("\n")));
+				
+				if ($results.is(':visible')) {
+					show();
+				}
+
 			});
 
 		},
 
-		run = function() {
+		refresh = function() {
 
-			var flashVersion = swfobject.getFlashPlayerVersion(),
-				emailTitle = 'BRWSR.INFO';
+			var flashVersion = swfobject.getFlashPlayerVersion();
 
 			data = [];
 
@@ -152,16 +164,12 @@
 			data.push('---');
 			data.push('PLUGINS');
 			data.push('Flash Player Version: ' + flashVersion.major + '.' + flashVersion.minor + '.' + flashVersion.release);
-			
-			
-			// show it ---
-		
+
+		},
+
+		show = function() {
 			$output.html(data.join('<br>'));
 			$results.slideDown();
-			$btnEmail.addClass('is-visible');
-
-			$btnEmail.attr('href', 'mailto:?subject=' + escape(emailTitle) + '&body=' + escape(data.join("\n")));
-
 		};
 
 	$(document).ready(function() {

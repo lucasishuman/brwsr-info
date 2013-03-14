@@ -63,12 +63,16 @@ header {
 }
 
 footer {
-	padding: 10px 0;
-	font-size: 12px;
+	padding: 20px 0;
+	font-size: 14px;
 	line-height: 18px;
 	color: lighten($textColor, 20%);
 	border-top: 1px solid lighten($textColor, 40%);
-	margin-top: 50px;
+	margin-top: 30px;
+
+	p {
+		margin-bottom: 5px;
+	}
 }
 
 section {
@@ -79,18 +83,6 @@ section {
 
 	& > p {
 		margin-bottom: 20px;
-	}
-
-	.btn-run {
-		margin-right: 10px;
-	}
-
-	.btn-email {
-		display: none;
-
-		&.is-visible {
-			display: inline-block;
-		}
 	}
 
 }
@@ -116,6 +108,7 @@ section {
 .btn {
 	@include button($buttonBgColor);
 	padding: 10px 20px;
+	margin-right: 10px;
 	font-size: 13px;
 
 	&:hover {
