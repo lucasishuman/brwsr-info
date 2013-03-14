@@ -1,4 +1,8 @@
-/*global console, Modernizr, swfobject, escape*/
+/*global console, Modernizr, swfobject*/
+
+/*
+@codekit-prepend "libs/modernizr-2.6.2.js";
+*/
 
 ;(function($, document, window, undefined) {
 
@@ -29,7 +33,7 @@
 			$btnEmail.click(function(e) {
 
 				refresh();
-				$btnEmail.attr('href', 'mailto:?subject=' + escape(EMAIL_TITLE) + '&body=' + escape(data.join("\n")));
+				$btnEmail.attr('href', 'mailto:?subject=' + window.escape(EMAIL_TITLE) + '&body=' + window.escape(data.join("\n")));
 				
 				if ($results.is(':visible')) {
 					show();

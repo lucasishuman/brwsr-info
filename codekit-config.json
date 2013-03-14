@@ -2,26 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/js\/lib\/modernizr-2.6.2.js" : {
-      "ignoreWasSetByUser" : 1,
+    "\/js\/libs\/modernizr-2.6.2.js" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/lib\/modernizr-2.6.2.js",
+      "inputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/lib\/modernizr-2.6.2.min.js",
-      "fileType" : 64
-    },
-    "\/js\/lib\/modernizr-2.6.2.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/lib\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/lib\/modernizr-2.6.2.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.js",
       "fileType" : 64
     },
     "\/js\/brwsr.min.js" : {
@@ -35,15 +24,15 @@
       "outputAbbreviatedPath" : "\/js\/brwsr.min.min.js",
       "fileType" : 64
     },
-    "\/css\/brwsr.scss" : {
+    "\/css\/_reset.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/brwsr.scss",
-      "outputStyle" : 3,
+      "inputAbbreviatedPath" : "\/css\/_reset.scss",
+      "outputStyle" : 0,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/brwsr.css",
+      "outputAbbreviatedPath" : "\/css\/_reset.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -65,15 +54,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/css\/_reset.scss" : {
+    "\/css\/brwsr.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/_reset.scss",
-      "outputStyle" : 0,
+      "inputAbbreviatedPath" : "\/css\/brwsr.scss",
+      "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_reset.css",
+      "outputAbbreviatedPath" : "\/css\/brwsr.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
