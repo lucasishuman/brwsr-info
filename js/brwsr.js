@@ -1,4 +1,4 @@
-/*global console, Modernizr, swfobject*/
+/*global console, Modernizr, escape*/
 
 /*
 @codekit-prepend "libs/modernizr-2.6.2.js";
@@ -33,7 +33,7 @@
 			$btnEmail.click(function(e) {
 
 				refresh();
-				$btnEmail.attr('href', 'mailto:?subject=' + window.escape(EMAIL_TITLE) + '&body=' + window.escape(data.join("\n")));
+				$btnEmail.attr('href', 'mailto:?subject=' + escape(EMAIL_TITLE) + '&body=' + escape(data.join("\n")));
 				
 				if ($results.is(':visible')) {
 					show();
@@ -45,7 +45,7 @@
 
 		refresh = function() {
 
-			var flashVersion = swfobject.getFlashPlayerVersion();
+			var i, len, plugin;
 
 			data = [];
 
@@ -165,9 +165,22 @@
 			data.push('(orientation:landscape): ' + Modernizr.mq('only screen and (orientation:landscape)'));
 
 			// Plugins
+
+			if (!navigator.plugins || navigator.plugins.length === 0) {
+				return;
+			}
+			
 			data.push('---');
 			data.push('PLUGINS');
-			data.push('Flash Player Version: ' + flashVersion.major + '.' + flashVersion.minor + '.' + flashVersion.release);
+
+			i = 0;
+			len = navigator.plugins.length;
+
+			while (i < len) {
+				plugin = navigator.plugins[i];
+				data.push(plugin.name + ' (' + plugin.version + '), ' + plugin.description);
+				i++;
+			}
 
 		},
 
