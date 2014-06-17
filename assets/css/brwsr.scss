@@ -1,5 +1,5 @@
 
-@import 'bourbon.scss';
+@import 'bourbon';
 @import '_reset.scss';
 
 
@@ -96,11 +96,9 @@ section {
 		border: 1px solid darken($bgColor, 20%);
 		background-color: darken($bgColor, 10%);
 		border-radius: 4px;
-		@include box-shadow(inset 0 0 15px rgba(0, 0, 0, 0.1));
+		box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
 		font: 14px/20px $monospace;
 		color: darken($textColor, 10%);
-		//max-height: 500px;
-		//overflow: auto;
 	}
 
 }
